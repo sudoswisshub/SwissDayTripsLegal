@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Swiss Day Trips</title>
+<style>
+  :root{
+    --bg: #faf6f0;
+    --bg-alt: #f3ece1;
+    --ink: #2e2a24;
+    --ink-soft: #6b6357;
+    --accent: #DA291C;
+    --accent-soft: #f3d9d5;
+    --pine: #3f5b4a;
+    --card: #ffffff;
+    --border: #e8ddcd;
+    --shadow: rgba(89, 66, 30, 0.12);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg: #201d19;
+      --bg-alt: #262220;
+      --ink: #f2ece2;
+      --ink-soft: #bdb2a1;
+      --accent: #ff6b5a;
+      --accent-soft: #3a2321;
+      --pine: #8fb39d;
+      --card: #2a2521;
+      --border: #3a332c;
+      --shadow: rgba(0, 0, 0, 0.35);
+    }
+  }
+  * { box-sizing: border-box; }
+  body{
+    margin:0;
+    background: linear-gradient(180deg, var(--bg-alt) 0%, var(--bg) 340px);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+  }
+  .hero{
+    padding: 64px 24px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before{
+    content: "";
+    position: absolute;
+    inset: -40% -10% auto -10%;
+    height: 260px;
+    background:
+      radial-gradient(60% 100% at 15% 100%, var(--accent-soft) 0%, transparent 70%),
+      radial-gradient(50% 100% at 85% 100%, var(--accent-soft) 0%, transparent 70%);
+    opacity: .8;
+    z-index: 0;
+  }
+  .hero > * { position: relative; z-index: 1; }
+  .eyebrow{
+    display:inline-block;
+    font-size: 13px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  h1{ font-size: 34px; margin: 0 0 8px; letter-spacing: -0.01em; }
+  .updated{ color: var(--ink-soft); font-size: 14px; }
+  nav{
+    display:flex; gap: 6px; justify-content:center; flex-wrap: wrap;
+    margin-top: 22px;
+  }
+  nav a{
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 9px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  nav a:hover{ transform: translateY(-1px); box-shadow: 0 6px 16px var(--shadow); }
+  nav a.active{ background: var(--pine); border-color: var(--pine); color: #fff; }
+
+  main{
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 8px 24px 80px;
+  }
+  .card{
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 36px clamp(20px, 5vw, 44px);
+    box-shadow: 0 20px 45px var(--shadow);
+  }
+  h2{
+    font-size: 19px;
+    margin: 34px 0 10px;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+    color: var(--pine);
+  }
+  h2:first-child{ margin-top: 0; padding-top: 0; border-top: none; }
+  p, li{ color: var(--ink); font-size: 15.5px; }
+  ul{ padding-left: 22px; margin: 10px 0; }
+  li{ margin: 6px 0; }
+  a{ color: var(--accent); }
+  .summary{
+    background: var(--accent-soft);
+    border-radius: 14px;
+    padding: 18px 20px;
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+  .summary strong{ color: var(--pine); }
+  footer{
+    text-align:center;
+    color: var(--ink-soft);
+    font-size: 13px;
+    padding: 20px 24px 60px;
+  }
+  footer a{ color: var(--ink-soft); }
+  code{
+    background: var(--bg-alt);
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-size: 13.5px;
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <span class="eyebrow">Swiss Day Trips</span>
+  <h1>Privacy Policy</h1>
+  <div class="updated">Last updated September 6, 2026</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="support.html">Support</a>
+    <a href="privacy.html" class="active">Privacy</a>
+    <a href="terms.html">Terms of Use</a>
+  </nav>
+</div>
+
+<main>
+  <div class="card">
+
+    <div class="summary">
+      <strong>In short:</strong> Swiss Day Trips does not create accounts, does not track you across apps or websites, and does not sell or share your personal data. Your favourites, notes, and settings stay on your device. A search only sends the text or coordinates needed to fetch schedules, routes, and weather from the public providers listed below.
+    </div>
+
+    <h2>Who this applies to</h2>
+    <p>This policy covers the Swiss Day Trips iOS app and its Home Screen widget, published by Alice Turcanu. If you have questions about this policy or how the app handles your information, contact <a href="mailto:alice.turcanu91@gmail.com">alice.turcanu91@gmail.com</a>.</p>
+
+    <h2>No accounts, no tracking</h2>
+    <p>Swiss Day Trips does not require you to create an account or sign in. The app does not use analytics SDKs, advertising identifiers, or third-party trackers, and it does not build a profile of you or your device for advertising purposes.</p>
+
+    <h2>What stays on your device</h2>
+    <p>Saved destinations, trip notes, packing checklists, recently viewed places, comparison selections, and app settings are stored locally using Apple's on-device storage (app-scoped <code>UserDefaults</code>, shared with the Home Screen widget through an App Group so your favourites appear in both places). This data is not uploaded to any server we operate, and it is deleted automatically if you delete the app.</p>
+
+    <h2>What is sent over the network, and to whom</h2>
+    <p>To show you live schedules, routes, and weather, the app sends only the information required to fulfil a specific request to these public data providers:</p>
+    <ul>
+      <li><a href="https://transport.opendata.ch" target="_blank" rel="noopener">transport.opendata.ch</a> — Swiss public transport schedules and connections</li>
+      <li><a href="https://docs.geo.admin.ch" target="_blank" rel="noopener">geo.admin.ch</a> — Swiss federal geodata and place lookup</li>
+      <li><a href="https://open-meteo.com" target="_blank" rel="noopener">open-meteo.com</a> — weather forecasts</li>
+      <li><a href="https://www.openstreetmap.org" target="_blank" rel="noopener">OpenStreetMap</a> — accessibility and getting-around data, © OpenStreetMap contributors, licensed under the ODbL</li>
+    </ul>
+    <p>A typed search sends the search text you entered. A location-based search sends only the resolved place name and coordinate — never a continuous location trail. Each provider's own privacy practices govern the data they receive; please refer to their respective sites for details.</p>
+
+    <h2>Location access</h2>
+    <p>Swiss Day Trips only asks for your location when you tap "Use my current location" to search for trips starting near you. Location is used in the moment of that search and is not collected, stored, or used for any other purpose. You can deny or revoke location access at any time in Settings → Privacy & Security → Location Services without losing any other functionality.</p>
+
+    <h2>Calendar, Reminders, and sharing</h2>
+    <p>If you choose to export a trip to Calendar, schedule a Reminder, or share a trip, the app writes only what you explicitly asked it to write, using Apple's system frameworks. Nothing is sent to us as part of these actions.</p>
+
+    <h2>Subscriptions and payment</h2>
+    <p>Swiss Day Trips Pro purchases are handled entirely by Apple through StoreKit. We never see or store your payment details — Apple manages billing, receipts, and renewal according to your App Store account. See our <a href="terms.html">Terms of Use</a> for subscription terms.</p>
+
+    <h2>Data retention</h2>
+    <p>Because your saved data lives on your device, it persists only as long as the app is installed. Deleting the app removes it. We do not retain copies on any server we operate.</p>
+
+    <h2>Children's privacy</h2>
+    <p>Swiss Day Trips is not directed at children under 13, and we do not knowingly collect personal data from children.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, we will update the "Last updated" date above. Continued use of the app after a change constitutes acceptance of the revised policy.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about privacy can be sent to <a href="mailto:alice.turcanu91@gmail.com">alice.turcanu91@gmail.com</a>.</p>
+
+  </div>
+</main>
+
+<footer>
+  Swiss Day Trips · <a href="mailto:alice.turcanu91@gmail.com">alice.turcanu91@gmail.com</a>
+</footer>
+
+</body>
+</html>

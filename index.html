@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swiss Day Trips</title>
+<style>
+  :root{
+    --bg: #faf6f0;
+    --bg-alt: #f3ece1;
+    --ink: #2e2a24;
+    --ink-soft: #6b6357;
+    --accent: #DA291C;
+    --accent-soft: #f3d9d5;
+    --pine: #3f5b4a;
+    --pine-soft: #dce8e0;
+    --card: #ffffff;
+    --border: #e8ddcd;
+    --shadow: rgba(89, 66, 30, 0.12);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg: #201d19;
+      --bg-alt: #262220;
+      --ink: #f2ece2;
+      --ink-soft: #bdb2a1;
+      --accent: #ff6b5a;
+      --accent-soft: #3a2321;
+      --pine: #8fb39d;
+      --pine-soft: #2b332e;
+      --card: #2a2521;
+      --border: #3a332c;
+      --shadow: rgba(0, 0, 0, 0.35);
+    }
+  }
+  * { box-sizing: border-box; }
+  body{
+    margin:0;
+    background: linear-gradient(180deg, var(--bg-alt) 0%, var(--bg) 340px);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+  }
+  .hero{
+    padding: 64px 24px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before{
+    content: "";
+    position: absolute;
+    inset: -40% -10% auto -10%;
+    height: 280px;
+    background:
+      radial-gradient(60% 100% at 15% 100%, var(--accent-soft) 0%, transparent 70%),
+      radial-gradient(50% 100% at 85% 100%, var(--pine-soft) 0%, transparent 70%);
+    opacity: .8;
+    z-index: 0;
+  }
+  .hero > * { position: relative; z-index: 1; }
+  .icon{
+    width: 84px;
+    height: 84px;
+    border-radius: 20px;
+    box-shadow: 0 14px 30px var(--shadow);
+    margin-bottom: 18px;
+  }
+  h1{ font-size: 34px; margin: 0 0 8px; letter-spacing: -0.01em; }
+  .sub{ color: var(--ink-soft); font-size: 15.5px; max-width: 460px; margin: 0 auto; }
+  .store-link{
+    display:inline-flex;
+    align-items:center;
+    gap: 8px;
+    margin-top: 22px;
+    background: var(--ink);
+    color: var(--bg);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14.5px;
+    padding: 12px 22px;
+    border-radius: 999px;
+    box-shadow: 0 10px 24px var(--shadow);
+    transition: transform .15s ease;
+  }
+  .store-link:hover{ transform: translateY(-1px); }
+
+  main{
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 8px 24px 80px;
+  }
+
+  h2.section-title{
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--pine);
+    margin: 44px 0 16px;
+  }
+  h2.section-title:first-of-type{ margin-top: 0; }
+
+  .cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+  @media (max-width: 600px){
+    .cards{ grid-template-columns: 1fr; }
+  }
+  .card{
+    display:block;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 22px 22px 24px;
+    text-decoration: none;
+    color: var(--ink);
+    box-shadow: 0 14px 32px var(--shadow);
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .card:hover{ transform: translateY(-2px); box-shadow: 0 18px 36px var(--shadow); }
+  .card .label{
+    font-size: 12.5px;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+  .card h3{ margin: 0 0 6px; font-size: 17px; }
+  .card p{ margin: 0; color: var(--ink-soft); font-size: 14px; }
+
+  .about{
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 30px clamp(20px, 5vw, 40px);
+    box-shadow: 0 20px 45px var(--shadow);
+  }
+  .about p{ margin: 0 0 12px; font-size: 15.5px; }
+  .about p:last-child{ margin-bottom: 0; }
+  .about a{ color: var(--accent); }
+
+  footer{
+    text-align:center;
+    color: var(--ink-soft);
+    font-size: 13px;
+    padding: 20px 24px 60px;
+  }
+  footer a{ color: var(--ink-soft); }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <img class="icon" src="icon.png" alt="Swiss Day Trips app icon">
+  <h1>Swiss Day Trips</h1>
+  <div class="sub">Plan spontaneous day trips across Switzerland — live transport, weather, and routes, all in one place.</div>
+  <a class="store-link" href="https://apps.apple.com/app/id6808959798" target="_blank" rel="noopener">Download on the App Store</a>
+</div>
+
+<main>
+
+  <h2 class="section-title">Explore</h2>
+  <div class="cards">
+    <a class="card" href="support.html">
+      <div class="label">Help</div>
+      <h3>Support</h3>
+      <p>FAQs and how to reach us</p>
+    </a>
+    <a class="card" href="privacy.html">
+      <div class="label">Legal</div>
+      <h3>Privacy Policy</h3>
+      <p>What data we do (and don't) use</p>
+    </a>
+    <a class="card" href="terms.html">
+      <div class="label">Legal</div>
+      <h3>Terms of Use</h3>
+      <p>Subscriptions and app licence</p>
+    </a>
+  </div>
+
+  <h2 class="section-title">About the app</h2>
+  <div class="about">
+    <p>Swiss Day Trips helps you find and plan a day out anywhere in Switzerland, using live public transport schedules, weather forecasts, and route data. Search by destination or from your current location, save favourites, and export a plan to Calendar or Reminders.</p>
+    <p>Questions? Reach us any time at <a href="mailto:alice.turcanu91@gmail.com">alice.turcanu91@gmail.com</a>.</p>
+  </div>
+
+</main>
+
+<footer>
+  Swiss Day Trips · <a href="mailto:alice.turcanu91@gmail.com">alice.turcanu91@gmail.com</a>
+</footer>
+
+</body>
+</html>

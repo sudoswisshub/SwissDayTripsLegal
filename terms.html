@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Use — Swiss Day Trips</title>
+<style>
+  :root{
+    --bg: #faf6f0;
+    --bg-alt: #f3ece1;
+    --ink: #2e2a24;
+    --ink-soft: #6b6357;
+    --accent: #DA291C;
+    --accent-soft: #f3d9d5;
+    --pine: #3f5b4a;
+    --card: #ffffff;
+    --border: #e8ddcd;
+    --shadow: rgba(89, 66, 30, 0.12);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg: #201d19;
+      --bg-alt: #262220;
+      --ink: #f2ece2;
+      --ink-soft: #bdb2a1;
+      --accent: #ff6b5a;
+      --accent-soft: #3a2321;
+      --pine: #8fb39d;
+      --card: #2a2521;
+      --border: #3a332c;
+      --shadow: rgba(0, 0, 0, 0.35);
+    }
+  }
+  * { box-sizing: border-box; }
+  body{
+    margin:0;
+    background: linear-gradient(180deg, var(--bg-alt) 0%, var(--bg) 340px);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+  }
+  .hero{
+    padding: 64px 24px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before{
+    content: "";
+    position: absolute;
+    inset: -40% -10% auto -10%;
+    height: 260px;
+    background:
+      radial-gradient(60% 100% at 15% 100%, var(--accent-soft) 0%, transparent 70%),
+      radial-gradient(50% 100% at 85% 100%, var(--accent-soft) 0%, transparent 70%);
+    opacity: .8;
+    z-index: 0;
+  }
+  .hero > * { position: relative; z-index: 1; }
+  .eyebrow{
+    display:inline-block;
+    font-size: 13px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  h1{ font-size: 34px; margin: 0 0 8px; letter-spacing: -0.01em; }
+  .updated{ color: var(--ink-soft); font-size: 14px; }
+  nav{
+    display:flex; gap: 6px; justify-content:center; flex-wrap: wrap;
+    margin-top: 22px;
+  }
+  nav a{
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 9px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  nav a:hover{ transform: translateY(-1px); box-shadow: 0 6px 16px var(--shadow); }
+  nav a.active{ background: var(--pine); border-color: var(--pine); color: #fff; }
+
+  main{
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 8px 24px 80px;
+  }
+  .card{
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 36px clamp(20px, 5vw, 44px);
+    box-shadow: 0 20px 45px var(--shadow);
+  }
+  h2{
+    font-size: 19px;
+    margin: 34px 0 10px;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+    color: var(--pine);
+  }
+  h2:first-child{ margin-top: 0; padding-top: 0; border-top: none; }
+  p, li{ color: var(--ink); font-size: 15.5px; }
+  ul{ padding-left: 22px; margin: 10px 0; }
+  li{ margin: 6px 0; }
+  a{ color: var(--accent); }
+  .summary{
+    background: var(--accent-soft);
+    border-radius: 14px;
+    padding: 18px 20px;
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+  .summary strong{ color: var(--pine); }
+  table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 14.5px;
+  }
+  th, td{
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  th{ color: var(--ink-soft); font-weight: 600; }
+  footer{
+    text-align:center;
+    color: var(--ink-soft);
+    font-size: 13px;
+    padding: 20px 24px 60px;
+  }
+  footer a{ color: var(--ink-soft); }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <span class="eyebrow">Swiss Day Trips</span>
+  <h1>Terms of Use</h1>
+  <div class="updated">Last updated September 6, 2026</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="support.html">Support</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html" class="active">Terms of Use</a>
+  </nav>
+</div>
+
+<main>
+  <div class="card">
+
+    <div class="summary">
+      <strong>In short:</strong> Swiss Day Trips is provided for personal, non-commercial trip planning. Optional Pro subscriptions auto-renew until cancelled in your App Store account. Schedules, routes, and weather come from independent public providers and are shown "as is" — always confirm departure times before you travel.
+    </div>
+
+    <h2>Acceptance of these terms</h2>
+    <p>By downloading, installing, or using Swiss Day Trips (the "App"), you agree to these Terms of Use. If you do not agree, please do not use the App.</p>
+
+    <h2>Licence to use the App</h2>
+    <p>Subject to these terms, you are granted a limited, non-exclusive, non-transferable licence to use the App on Apple-branded products that you own or control, as permitted by the App Store's Usage Rules, for your own personal, non-commercial trip planning. You may not rent, lease, lend, sell, redistribute, or sublicense the App. All rights not expressly granted are reserved.</p>
+
+    <h2>Swiss Day Trips Pro subscription</h2>
+    <p>Swiss Day Trips offers an optional auto-renewing subscription service, <strong>Swiss Day Trips Pro</strong>, which unlocks the app's full set of trip-planning tools (comparison, unlimited saved destinations, and other Pro features) for the length of the subscription period you choose. Purchases are billed and processed by Apple through your App Store account, under these terms:</p>
+    <table>
+      <tr><th>Plan</th><th>Price*</th><th>Length / renews</th></tr>
+      <tr><td>Pro — Monthly</td><td>CHF 4.90</td><td>1 month, renews monthly</td></tr>
+      <tr><td>Pro — Yearly</td><td>CHF 29.00</td><td>1 year, renews yearly</td></tr>
+    </table>
+    <p style="font-size:13px;color:var(--ink-soft);">*Displayed price is per subscription period (per month, or per year) and may vary by region and currency at checkout. Where offered, a free introductory trial period and its length are shown at the point of purchase, before you are charged.</p>
+    <ul>
+      <li>Payment is charged to your Apple ID account at confirmation of purchase.</li>
+      <li>Subscriptions automatically renew for the same length of time unless auto-renewal is turned off at least 24 hours before the end of the current period.</li>
+      <li>Your account will be charged for renewal within 24 hours prior to the end of the current period, at the price shown above (or the then-current price, if it has changed and you have been notified as required by law).</li>
+      <li>You can manage your subscription, and turn off auto-renewal, at any time in your device's Settings → [your name] → Subscriptions, or in the App Store app, after purchase. Turning off auto-renewal stops future charges; access to Pro features continues until the end of the period already paid for.</li>
+      <li>Any unused portion of a free trial period is forfeited when you purchase a subscription, where applicable.</li>
+      <li>Refunds are requested through and granted solely at the discretion of Apple, in accordance with Apple's App Store refund policies — we do not process payments or issue refunds directly.</li>
+    </ul>
+
+    <h2>Third-party data providers</h2>
+    <p>Schedules, routes, place data, and weather forecasts shown in the App are supplied by independent public services, including <a href="https://transport.opendata.ch" target="_blank" rel="noopener">transport.opendata.ch</a>, <a href="https://docs.geo.admin.ch" target="_blank" rel="noopener">geo.admin.ch</a>, <a href="https://open-meteo.com" target="_blank" rel="noopener">open-meteo.com</a>, and <a href="https://www.openstreetmap.org" target="_blank" rel="noopener">OpenStreetMap</a> (© OpenStreetMap contributors, ODbL). We do not control these providers and cannot guarantee that the data they return is complete, accurate, or up to date. Availability and terms of use for each provider's data remain governed by that provider.</p>
+
+    <h2>No warranty</h2>
+    <p>The App is provided "as is" and "as available", without warranties of any kind, express or implied. We do not warrant that journey times, connections, prices, or weather information shown in the App are accurate or error-free. Always confirm departure times and travel details with the official transport operator before you travel.</p>
+
+    <h2>Limitation of liability</h2>
+    <p>To the fullest extent permitted by law, we are not liable for any indirect, incidental, or consequential damages arising from your use of, or inability to use, the App, including missed connections, travel delays, or reliance on third-party data displayed in the App.</p>
+
+    <h2>Acceptable use</h2>
+    <p>You agree not to misuse the App, attempt to reverse-engineer it beyond what is permitted by applicable law, or use it in a way that could disable, overburden, or impair the services it connects to.</p>
+
+    <h2>Apple as a distribution platform</h2>
+    <p>If you obtained the App from the Apple App Store, you also acknowledge the following, which apply between you, us, and Apple:</p>
+    <ul>
+      <li>This licence is between you and us (Alice Turcanu) only, not with Apple, and we — not Apple — are solely responsible for the App and its content.</li>
+      <li>Apple has no obligation to provide any maintenance or support services for the App.</li>
+      <li>In the event the App fails to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price for the App to you (if any); to the maximum extent permitted by applicable law, Apple has no other warranty obligation with respect to the App.</li>
+      <li>We, not Apple, are responsible for addressing any claims relating to the App or your possession and/or use of it, including: (i) product liability claims; (ii) any claim that the App fails to conform to any applicable legal or regulatory requirement; and (iii) claims arising under consumer protection or similar legislation.</li>
+      <li>In the event of any third-party claim that the App, or your possession and use of it, infringes that third party's intellectual property rights, we, not Apple, are solely responsible for the investigation, defence, settlement, and discharge of any such claim.</li>
+      <li>You represent and warrant that you are not located in a country subject to a U.S. Government embargo or designated as "terrorist-supporting," and that you are not listed on any U.S. Government list of prohibited or restricted parties.</li>
+      <li>If you have any questions, complaints, or claims with respect to the App, they should be directed to us at <a href="mailto:alice.turcanu91@gmail.com">alice.turcanu91@gmail.com</a>, not to Apple.</li>
+      <li>Apple, and Apple's subsidiaries, are third-party beneficiaries of these Terms of Use and, upon your acceptance, Apple will have the right (and will be deemed to have accepted the right) to enforce these terms against you as a third-party beneficiary.</li>
+    </ul>
+
+    <h2>Termination</h2>
+    <p>We may suspend or terminate your access to the App if you violate these terms. You may stop using the App, and cancel any subscription, at any time as described above.</p>
+
+    <h2>Governing law</h2>
+    <p>These terms are governed by the laws of Switzerland, without regard to its conflict-of-laws principles, except and to the extent that mandatory consumer-protection laws of your country of residence provide you with additional rights that cannot be waived — those local rights remain unaffected.</p>
+
+    <h2>Changes to these terms</h2>
+    <p>We may update these terms from time to time. If we do, we will update the "Last updated" date above. Continued use of the App after a change constitutes acceptance of the revised terms.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about these terms can be sent to <a href="mailto:alice.turcanu91@gmail.com">alice.turcanu91@gmail.com</a>.</p>
+
+  </div>
+</main>
+
+<footer>
+  Swiss Day Trips · <a href="mailto:alice.turcanu91@gmail.com">alice.turcanu91@gmail.com</a>
+</footer>
+
+</body>
+</html>
